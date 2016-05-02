@@ -1,25 +1,193 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="taptap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="vko-ff-i53">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taptap" translatesAutoresizingMaskIntoConstraints="NO" id="Bbp-4x-ZO1">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="189"/>
+                                        <animations/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="i1G-Vk-bfT">
+                                        <rect key="frame" x="0.0" y="189" width="343" height="122"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kru-xW-5pt">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="122"/>
+                                                <animations/>
+                                                <state key="normal" image="c"/>
+                                                <connections>
+                                                    <action selector="classic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yeK-vo-2ef"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWm-Cg-rim">
+                                                <rect key="frame" x="346" y="19" width="0.0" height="85"/>
+                                                <animations/>
+                                                <state key="normal" image="m2"/>
+                                                <connections>
+                                                    <action selector="classicmode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBM-s3-fZM"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yft-cY-ISS">
+                                                <rect key="frame" x="346" y="19" width="0.0" height="85"/>
+                                                <animations/>
+                                                <state key="normal" image="m3"/>
+                                                <connections>
+                                                    <action selector="classicmode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxl-oo-j8a"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uIT-2C-bzI">
+                                        <rect key="frame" x="0.0" y="311" width="343" height="122"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhr-G6-4qK">
+                                                <rect key="frame" x="0.0" y="19" width="0.0" height="85"/>
+                                                <animations/>
+                                                <state key="normal" image="m"/>
+                                                <connections>
+                                                    <action selector="challangemode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Kk-CW-GfE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwK-ht-Iu5">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="122"/>
+                                                <animations/>
+                                                <state key="normal" image="c2"/>
+                                                <connections>
+                                                    <action selector="challange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9b-bE-JN6"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHM-Rn-vf5">
+                                                <rect key="frame" x="343" y="19" width="0.0" height="85"/>
+                                                <animations/>
+                                                <state key="normal" image="m1"/>
+                                                <connections>
+                                                    <action selector="onevoneMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NLd-Bz-THt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eD7-OU-g4U">
+                                        <rect key="frame" x="0.0" y="433" width="343" height="122"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl6-JJ-WXr">
+                                                <rect key="frame" x="0.0" y="19" width="0.0" height="85"/>
+                                                <animations/>
+                                                <state key="normal" image="m1"/>
+                                                <connections>
+                                                    <action selector="challangemode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhb-LC-Bfh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-Gu-Pef">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="122"/>
+                                                <animations/>
+                                                <state key="normal" image="c3"/>
+                                                <connections>
+                                                    <action selector="onevone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KO8-hP-IfF"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVJ-d4-gnc">
+                                                <rect key="frame" x="343" y="19" width="0.0" height="85"/>
+                                                <animations/>
+                                                <state key="normal" image="m3"/>
+                                                <connections>
+                                                    <action selector="onevoneMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OeZ-FX-WGo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ul-fj-iAI">
+                                        <rect key="frame" x="0.0" y="555" width="343" height="112"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT2-Ho-gK0">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="112"/>
+                                                <animations/>
+                                                <state key="normal" image="h"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03h-AH-wPg">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="112"/>
+                                                <animations/>
+                                                <state key="normal" image="c4"/>
+                                                <connections>
+                                                    <action selector="best:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azA-hU-Xv4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="eD7-OU-g4U" firstAttribute="trailing" secondItem="vko-ff-i53" secondAttribute="trailingMargin" id="DCw-vY-kp0"/>
+                                    <constraint firstItem="eD7-OU-g4U" firstAttribute="leading" secondItem="vko-ff-i53" secondAttribute="leadingMargin" id="Ody-Bn-zvp"/>
+                                    <constraint firstItem="uIT-2C-bzI" firstAttribute="trailing" secondItem="vko-ff-i53" secondAttribute="trailingMargin" id="ZBq-L9-UAS"/>
+                                    <constraint firstItem="i1G-Vk-bfT" firstAttribute="trailing" secondItem="vko-ff-i53" secondAttribute="trailingMargin" id="a7J-Bq-faF"/>
+                                    <constraint firstItem="6ul-fj-iAI" firstAttribute="leading" secondItem="vko-ff-i53" secondAttribute="leading" id="j08-Sq-lv8"/>
+                                    <constraint firstItem="uIT-2C-bzI" firstAttribute="leading" secondItem="vko-ff-i53" secondAttribute="leadingMargin" id="nS1-Al-Ycz"/>
+                                    <constraint firstItem="i1G-Vk-bfT" firstAttribute="leading" secondItem="vko-ff-i53" secondAttribute="leadingMargin" id="tAt-hx-v3o"/>
+                                    <constraint firstItem="Bbp-4x-ZO1" firstAttribute="centerX" secondItem="vko-ff-i53" secondAttribute="centerX" id="uzt-r6-IIR"/>
+                                    <constraint firstAttribute="trailing" secondItem="6ul-fj-iAI" secondAttribute="trailing" id="zjQ-i8-7CF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vko-ff-i53" secondAttribute="trailing" id="8VE-yW-2xW"/>
+                            <constraint firstItem="vko-ff-i53" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="R2y-tT-hLm"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="vko-ff-i53" secondAttribute="bottom" id="YVl-LW-5rY"/>
+                            <constraint firstItem="vko-ff-i53" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oWx-lD-yev"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="b1" destination="kru-xW-5pt" id="kP8-z7-IbK"/>
+                        <outlet property="b2" destination="cwK-ht-Iu5" id="g9E-Yu-Np8"/>
+                        <outlet property="b3" destination="ELK-Gu-Pef" id="6GQ-Hf-dSY"/>
+                        <outlet property="b4" destination="03h-AH-wPg" id="sQQ-bb-EDu"/>
+                        <outlet property="c1" destination="xWm-Cg-rim" id="Lzp-al-tTs"/>
+                        <outlet property="c2" destination="Yft-cY-ISS" id="xlU-ZR-G5t"/>
+                        <outlet property="c3" destination="zHM-Rn-vf5" id="qRT-tX-l4g"/>
+                        <outlet property="c4" destination="IVJ-d4-gnc" id="Ot8-0P-2zf"/>
+                        <outlet property="c5" destination="mhr-G6-4qK" id="azd-sQ-5l7"/>
+                        <outlet property="c6" destination="Nl6-JJ-WXr" id="fLS-K0-YHk"/>
+                        <outlet property="c7" destination="IT2-Ho-gK0" id="HmX-gT-hcq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="387" y="344"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="c" width="135" height="122"/>
+        <image name="c2" width="135" height="122"/>
+        <image name="c3" width="135" height="122"/>
+        <image name="c4" width="135" height="122"/>
+        <image name="h" width="85" height="85"/>
+        <image name="m" width="85" height="85"/>
+        <image name="m1" width="85" height="85"/>
+        <image name="m2" width="85" height="85"/>
+        <image name="m3" width="85" height="85"/>
+        <image name="taptap" width="189" height="189"/>
+    </resources>
 </document>
